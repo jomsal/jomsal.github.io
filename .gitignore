@@ -54,5 +54,6 @@ vanilla-apple-landing
 .gemini/
 gha-creds-*.json
 dist
-output
-output/
+# output
+# output/
+# 
