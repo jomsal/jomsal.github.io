@@ -61,7 +61,7 @@ jobs:
       - name: Deploy to GitHub Pages
         if: ${{ !env.ACT }}
         id: deployment
-        uses: actions/deploy-pages@v4 # The official GitHub Pages deployment action
+        uses: actions/deploy-pages@v5 # The official GitHub Pages deployment action
 
   docker-build-push:
     runs-on: ubuntu-latest
