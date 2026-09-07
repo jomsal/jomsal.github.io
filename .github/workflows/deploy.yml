@@ -52,7 +52,7 @@ jobs:
         run: echo "Uploading artifact"
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3 # Uploads the static files
+        uses: actions/upload-pages-artifact@v5 # Uploads the static files
         with:
           path: "./output"
       - name: Print
