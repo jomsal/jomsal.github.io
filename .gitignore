@@ -55,3 +55,4 @@ vanilla-apple-landing
 gha-creds-*.json
 dist
 output/
+output
