@@ -1,0 +1,16 @@
+{
+  "name": "jomsal-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Portfolio website and assets",
+  "scripts": {
+    "build": "mkdir -p output && cp -r src/assets output/ 2>/dev/null || true && html-minifier-terser --input-dir ./src --output-dir ./output --file-ext html --collapse-whitespace --remove-comments --remove-redundant-attributes --use-short-doctype --minify-js true --minify-css true && cleancss -o output/styles.css src/styles.css && terser src/script.js --compress --mangle -o output/script.js && terser src/features.js --compress --mangle -o output/features.js && (cp src/favicon.ico output/ 2>/dev/null || true)",
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "clean-css-cli": "^5.6.3",
+    "html-minifier-terser": "^7.2.0",
+    "terser": "^5.37.0"
+  }
+}
