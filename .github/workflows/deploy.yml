@@ -128,7 +128,7 @@ jobs:
           cp -r output/* mdb-platform/mdb-overview/
 
       - name: Create Pull Request on mdb-platform
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.PAT_GITHUB }}
           path: mdb-platform
